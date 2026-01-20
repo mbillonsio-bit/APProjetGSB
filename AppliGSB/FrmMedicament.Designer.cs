@@ -30,19 +30,19 @@
         {
             this.spcMedicament = new System.Windows.Forms.SplitContainer();
             this.lblListeMedic = new System.Windows.Forms.Label();
+            this.txtFamille = new System.Windows.Forms.RichTextBox();
+            this.txtContreIndications = new System.Windows.Forms.RichTextBox();
+            this.txtEffets = new System.Windows.Forms.RichTextBox();
+            this.txtComposition = new System.Windows.Forms.RichTextBox();
+            this.txtNomCommercial = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblFamille = new System.Windows.Forms.Label();
+            this.lblContreIndications = new System.Windows.Forms.Label();
+            this.lblEffets = new System.Windows.Forms.Label();
             this.lblComposition = new System.Windows.Forms.Label();
             this.lblNomCom = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.lstMedicament = new System.Windows.Forms.ListBox();
-            this.lblEffets = new System.Windows.Forms.Label();
-            this.lblContreIndications = new System.Windows.Forms.Label();
-            this.lblFamille = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.txtNomCommercial = new System.Windows.Forms.TextBox();
-            this.txtComposition = new System.Windows.Forms.RichTextBox();
-            this.txtEffets = new System.Windows.Forms.RichTextBox();
-            this.txtContreIndications = new System.Windows.Forms.RichTextBox();
-            this.txtFamille = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.spcMedicament)).BeginInit();
             this.spcMedicament.Panel1.SuspendLayout();
             this.spcMedicament.Panel2.SuspendLayout();
@@ -76,8 +76,8 @@
             this.spcMedicament.Panel2.Controls.Add(this.lblId);
             this.spcMedicament.Panel2.Controls.Add(this.lstMedicament);
             this.spcMedicament.Panel2MinSize = 50;
-            this.spcMedicament.Size = new System.Drawing.Size(984, 746);
-            this.spcMedicament.SplitterDistance = 95;
+            this.spcMedicament.Size = new System.Drawing.Size(984, 769);
+            this.spcMedicament.SplitterDistance = 97;
             this.spcMedicament.TabIndex = 0;
             // 
             // lblListeMedic
@@ -89,6 +89,86 @@
             this.lblListeMedic.Size = new System.Drawing.Size(406, 42);
             this.lblListeMedic.TabIndex = 0;
             this.lblListeMedic.Text = "Liste des médicaments";
+            // 
+            // txtFamille
+            // 
+            this.txtFamille.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFamille.Location = new System.Drawing.Point(572, 557);
+            this.txtFamille.Name = "txtFamille";
+            this.txtFamille.Size = new System.Drawing.Size(367, 71);
+            this.txtFamille.TabIndex = 13;
+            this.txtFamille.Text = "";
+            // 
+            // txtContreIndications
+            // 
+            this.txtContreIndications.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtContreIndications.Location = new System.Drawing.Point(656, 369);
+            this.txtContreIndications.Name = "txtContreIndications";
+            this.txtContreIndications.Size = new System.Drawing.Size(283, 182);
+            this.txtContreIndications.TabIndex = 12;
+            this.txtContreIndications.Text = "";
+            // 
+            // txtEffets
+            // 
+            this.txtEffets.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEffets.Location = new System.Drawing.Point(555, 257);
+            this.txtEffets.Name = "txtEffets";
+            this.txtEffets.Size = new System.Drawing.Size(384, 106);
+            this.txtEffets.TabIndex = 11;
+            this.txtEffets.Text = "";
+            // 
+            // txtComposition
+            // 
+            this.txtComposition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtComposition.Location = new System.Drawing.Point(210, 468);
+            this.txtComposition.Name = "txtComposition";
+            this.txtComposition.Size = new System.Drawing.Size(265, 114);
+            this.txtComposition.TabIndex = 10;
+            this.txtComposition.Text = "";
+            // 
+            // txtNomCommercial
+            // 
+            this.txtNomCommercial.Location = new System.Drawing.Point(210, 379);
+            this.txtNomCommercial.Name = "txtNomCommercial";
+            this.txtNomCommercial.Size = new System.Drawing.Size(265, 20);
+            this.txtNomCommercial.TabIndex = 8;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(210, 292);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(265, 20);
+            this.txtId.TabIndex = 7;
+            // 
+            // lblFamille
+            // 
+            this.lblFamille.AutoSize = true;
+            this.lblFamille.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFamille.Location = new System.Drawing.Point(481, 585);
+            this.lblFamille.Name = "lblFamille";
+            this.lblFamille.Size = new System.Drawing.Size(76, 20);
+            this.lblFamille.TabIndex = 6;
+            this.lblFamille.Text = "Famille :";
+            // 
+            // lblContreIndications
+            // 
+            this.lblContreIndications.AutoSize = true;
+            this.lblContreIndications.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContreIndications.Location = new System.Drawing.Point(481, 379);
+            this.lblContreIndications.Name = "lblContreIndications";
+            this.lblContreIndications.Size = new System.Drawing.Size(169, 20);
+            this.lblContreIndications.TabIndex = 5;
+            this.lblContreIndications.Text = "Contre indications : ";
+            // 
+            // lblEffets
+            // 
+            this.lblEffets.AutoSize = true;
+            this.lblEffets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEffets.Location = new System.Drawing.Point(481, 292);
+            this.lblEffets.Name = "lblEffets";
+            this.lblEffets.Size = new System.Drawing.Size(68, 20);
+            this.lblEffets.TabIndex = 4;
+            this.lblEffets.Text = "Effets :";
             // 
             // lblComposition
             // 
@@ -129,93 +209,14 @@
             this.lstMedicament.TabIndex = 0;
             this.lstMedicament.SelectedIndexChanged += new System.EventHandler(this.lstMedicament_SelectedIndexChanged);
             // 
-            // lblEffets
-            // 
-            this.lblEffets.AutoSize = true;
-            this.lblEffets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEffets.Location = new System.Drawing.Point(481, 292);
-            this.lblEffets.Name = "lblEffets";
-            this.lblEffets.Size = new System.Drawing.Size(68, 20);
-            this.lblEffets.TabIndex = 4;
-            this.lblEffets.Text = "Effets :";
-            // 
-            // lblContreIndications
-            // 
-            this.lblContreIndications.AutoSize = true;
-            this.lblContreIndications.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContreIndications.Location = new System.Drawing.Point(481, 379);
-            this.lblContreIndications.Name = "lblContreIndications";
-            this.lblContreIndications.Size = new System.Drawing.Size(169, 20);
-            this.lblContreIndications.TabIndex = 5;
-            this.lblContreIndications.Text = "Contre indications : ";
-            // 
-            // lblFamille
-            // 
-            this.lblFamille.AutoSize = true;
-            this.lblFamille.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFamille.Location = new System.Drawing.Point(481, 585);
-            this.lblFamille.Name = "lblFamille";
-            this.lblFamille.Size = new System.Drawing.Size(76, 20);
-            this.lblFamille.TabIndex = 6;
-            this.lblFamille.Text = "Famille :";
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(210, 292);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(265, 20);
-            this.txtId.TabIndex = 7;
-            // 
-            // txtNomCommercial
-            // 
-            this.txtNomCommercial.Location = new System.Drawing.Point(210, 379);
-            this.txtNomCommercial.Name = "txtNomCommercial";
-            this.txtNomCommercial.Size = new System.Drawing.Size(265, 20);
-            this.txtNomCommercial.TabIndex = 8;
-            // 
-            // txtComposition
-            // 
-            this.txtComposition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtComposition.Location = new System.Drawing.Point(210, 468);
-            this.txtComposition.Name = "txtComposition";
-            this.txtComposition.Size = new System.Drawing.Size(265, 114);
-            this.txtComposition.TabIndex = 10;
-            this.txtComposition.Text = "";
-            // 
-            // txtEffets
-            // 
-            this.txtEffets.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEffets.Location = new System.Drawing.Point(555, 257);
-            this.txtEffets.Name = "txtEffets";
-            this.txtEffets.Size = new System.Drawing.Size(384, 106);
-            this.txtEffets.TabIndex = 11;
-            this.txtEffets.Text = "";
-            // 
-            // txtContreIndications
-            // 
-            this.txtContreIndications.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtContreIndications.Location = new System.Drawing.Point(656, 369);
-            this.txtContreIndications.Name = "txtContreIndications";
-            this.txtContreIndications.Size = new System.Drawing.Size(283, 182);
-            this.txtContreIndications.TabIndex = 12;
-            this.txtContreIndications.Text = "";
-            // 
-            // txtFamille
-            // 
-            this.txtFamille.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFamille.Location = new System.Drawing.Point(572, 557);
-            this.txtFamille.Name = "txtFamille";
-            this.txtFamille.Size = new System.Drawing.Size(367, 71);
-            this.txtFamille.TabIndex = 13;
-            this.txtFamille.Text = "";
-            // 
             // FrmMedicament
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(984, 746);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ClientSize = new System.Drawing.Size(984, 769);
             this.ControlBox = false;
             this.Controls.Add(this.spcMedicament);
             this.MinimumSize = new System.Drawing.Size(1000, 785);

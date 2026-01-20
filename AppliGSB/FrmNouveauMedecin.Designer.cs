@@ -144,12 +144,13 @@
             // lblNouvMedecin
             // 
             this.lblNouvMedecin.AutoSize = true;
+            this.lblNouvMedecin.BackColor = System.Drawing.Color.Transparent;
             this.lblNouvMedecin.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNouvMedecin.Location = new System.Drawing.Point(319, 56);
             this.lblNouvMedecin.Name = "lblNouvMedecin";
-            this.lblNouvMedecin.Size = new System.Drawing.Size(354, 42);
+            this.lblNouvMedecin.Size = new System.Drawing.Size(340, 42);
             this.lblNouvMedecin.TabIndex = 28;
-            this.lblNouvMedecin.Text = "Nouveau médecins";
+            this.lblNouvMedecin.Text = "Nouveau médecin";
             // 
             // cbxSpecialite
             // 
@@ -191,6 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(984, 766);
             this.ControlBox = false;
             this.Controls.Add(this.btnAjouter);

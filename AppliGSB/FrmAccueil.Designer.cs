@@ -189,20 +189,20 @@
             // mnuRapportAjouter
             // 
             this.mnuRapportAjouter.Name = "mnuRapportAjouter";
-            this.mnuRapportAjouter.Size = new System.Drawing.Size(180, 22);
+            this.mnuRapportAjouter.Size = new System.Drawing.Size(133, 22);
             this.mnuRapportAjouter.Text = "Ajouter";
             // 
             // mnuRapportRechercher
             // 
             this.mnuRapportRechercher.Name = "mnuRapportRechercher";
-            this.mnuRapportRechercher.Size = new System.Drawing.Size(180, 22);
+            this.mnuRapportRechercher.Size = new System.Drawing.Size(133, 22);
             this.mnuRapportRechercher.Text = "Rechercher";
             this.mnuRapportRechercher.Click += new System.EventHandler(this.mnuRapportRechercher_Click);
             // 
             // mnuRapportListe
             // 
             this.mnuRapportListe.Name = "mnuRapportListe";
-            this.mnuRapportListe.Size = new System.Drawing.Size(180, 22);
+            this.mnuRapportListe.Size = new System.Drawing.Size(133, 22);
             this.mnuRapportListe.Text = "Liste";
             // 
             // mnuAide
