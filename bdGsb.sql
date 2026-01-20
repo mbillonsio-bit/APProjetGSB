@@ -3,27 +3,6 @@ CREATE DATABASE IF NOT EXISTS bdGsb;
 USE bdGsb;
 
 
--- Structure de la table FraisForfait
-CREATE TABLE IF NOT EXISTS FraisForfait
-(
-  id 		varchar(3) NOT NULL,
-  libelle 	varchar(20) DEFAULT NULL,
-  montant 	decimal(5,2) DEFAULT NULL,
-  PRIMARY KEY (id)
-) 
-ENGINE=InnoDB;
-
-
--- Structure de la table Etat
-CREATE TABLE IF NOT EXISTS Etat
-(
-  id 		varchar(2) NOT NULL,
-  libelle 	varchar(30) DEFAULT NULL,
-  PRIMARY KEY (id)
-) 
-ENGINE=InnoDB;
-
-
 -- Structure de la table Visiteur
 CREATE TABLE IF NOT EXISTS Visiteur
 (
@@ -40,50 +19,6 @@ CREATE TABLE IF NOT EXISTS Visiteur
 ) 
 ENGINE=InnoDB;
 
-
--- Structure de la table FicheFrais
-CREATE TABLE IF NOT EXISTS Fichefrais 
-(
-  idVisiteur 	varchar(4) NOT NULL,
-  mois 			varchar(6) NOT NULL,
-  nbJustificatifs int(11) DEFAULT NULL,
-  montantValide decimal(10,2) DEFAULT NULL,
-  dateModif 	date DEFAULT NULL,
-  idEtat 		varchar(2) DEFAULT 'CR',
-  PRIMARY KEY (idVisiteur,mois),
-  FOREIGN KEY (idEtat) REFERENCES Etat(id),
-  FOREIGN KEY (idVisiteur) REFERENCES Visiteur(id)
-) 
-ENGINE=InnoDB;
-
-
--- Structure de la table LigneFraisForfait
-CREATE TABLE IF NOT EXISTS LigneFraisForfait 
-(
-  idVisiteur 	varchar(4) NOT NULL,
-  mois 			varchar(6) NOT NULL,
-  idFraisForfait varchar(3) NOT NULL,
-  quantite 		int(11) DEFAULT NULL,
-  PRIMARY KEY (idVisiteur,mois,idFraisForfait),
-  FOREIGN KEY (idVisiteur, mois) REFERENCES FicheFrais(idVisiteur, mois),
-  FOREIGN KEY (idFraisForfait) REFERENCES FraisForfait(id)
-) 
-ENGINE=InnoDB;
-
-
--- Structure de la table LigneFraisHorsForfait
-CREATE TABLE IF NOT EXISTS LigneFraisHorsForfait 
-(
-  id 			int(11) NOT NULL auto_increment,
-  idVisiteur 	varchar(4) NOT NULL,
-  mois 			varchar(6) NOT NULL,
-  libelle 		varchar(100) DEFAULT NULL,
-  date 			date DEFAULT NULL,
-  montant 		decimal(10,2) DEFAULT NULL,
-  PRIMARY KEY (id),
-  FOREIGN KEY (idVisiteur, mois) REFERENCES FicheFrais(idVisiteur, mois)
-) 
-ENGINE=InnoDB;
 
 
 -- Structure de la table Famille
@@ -166,21 +101,6 @@ CREATE TABLE IF NOT EXISTS Offrir
 ENGINE=InnoDB;
 
 -- Contenu des tables
-
--- Contenu FraisForfait
-INSERT INTO FraisForfait (id, libelle, montant) VALUES
-('ETP', 'Forfait Etape', 110.00),
-('KM', 'Frais Kilométrique', 0.62),
-('NUI', 'Nuitée Hôtel', 80.00),
-('REP', 'Repas Restaurant', 25.00);
-
-
--- Contenu Etat
-INSERT INTO Etat (id, libelle) VALUES
-('RB', 'Remboursée'),
-('CL', 'Saisie clôturée'),
-('CR', 'Fiche créée, saisie en cours'),
-('VA', 'Validée et mise en paiement');
 
 
 -- Contenu Visiteur
