@@ -257,6 +257,7 @@
             // 
             // cbxMedecins
             // 
+            this.cbxMedecins.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMedecins.FormattingEnabled = true;
             this.cbxMedecins.Location = new System.Drawing.Point(186, 102);
             this.cbxMedecins.Name = "cbxMedecins";
@@ -265,6 +266,7 @@
             // 
             // cbxVisiteurs
             // 
+            this.cbxVisiteurs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxVisiteurs.FormattingEnabled = true;
             this.cbxVisiteurs.Location = new System.Drawing.Point(186, 43);
             this.cbxVisiteurs.Name = "cbxVisiteurs";
